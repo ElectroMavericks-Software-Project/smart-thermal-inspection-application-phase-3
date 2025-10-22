@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sti
+    username: sti
+    password: sti
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+  web:
+    resources:
+      # Serve local files under ./media at URLs like /media/...
+      static-locations: classpath:/static/, file:media/
+
+springdoc:
+  swagger-ui:
+    path: /swagger
+
+storage:
+  local:
+    base-path: storage      # (used by your other upload service if any)
+    media-base: media       # baseline images -> ./media/baseline/

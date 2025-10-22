@@ -1,0 +1,45 @@
+# Demo Configuration - Embedded Database
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: sti-backend
+  
+  # Use H2 embedded database for demo
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+    
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    
+  # Serve static frontend content
+  web:
+    resources:
+      static-locations: classpath:/static/,classpath:/public/,file:static/
+      
+  profiles:
+    active: demo
+
+# File upload settings
+file:
+  upload-dir: ./media/
+
+# Logging
+logging:
+  level:
+    com.example.sti: INFO
+    org.springframework.web: DEBUG

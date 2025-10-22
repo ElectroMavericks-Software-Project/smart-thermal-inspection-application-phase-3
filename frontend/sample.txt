@@ -1,0 +1,5 @@
+cd "d:\7 sem\Software project\smart-thermal-inspection\backend"
+.\mvnw.cmd spring-boot:run
+
+cd "d:\7 sem\Software project\smart-thermal-inspection\frontend"
+npm run dev

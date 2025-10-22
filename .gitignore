@@ -1,0 +1,17 @@
+/phase-1/node_modules
+/backend_old
+/backend/storage/inspections
+/.vscode
+/backend/media
+/SUPERVISOR-SOURCE-PACKAGE
+SUPERVISOR-SOURCE-PACKAGE.zip
+create-zip-package.bat
+*.zip
+/Transformer anomaly
+/backend/Transformer anomaly/dataset
+/backend/Transformer anomaly/new annotations
+/backend/Transformer anomaly/Anomly Detection/data
+/backend/Transformer anomaly/Anomly Detection/runs
+backend/Transformer anomaly/Anomly Detection/yolov8n.pt
+backend/Transformer anomaly/Anomly Detection/yolov8x-seg.pt
+backend/Transformer anomaly/Anomly Detection/yolo11n.pt
