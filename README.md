@@ -1,0 +1,1 @@
+# smart-thermal-inspection-application-phase-3
